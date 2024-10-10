@@ -1,0 +1,81 @@
+.
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── app.py
+├── artifacts
+│   ├── data_ingestion
+│   │   ├── Chest-CT-Scan-data
+│   │   │   ├── adenocarcinoma
+│   │   │   └── normal
+│   │   └── data.zip
+│   ├── prepare_base_model
+│   │   ├── base_model.h5
+│   │   └── base_model_updated.h5
+│   └── training
+│       └── model.h5
+├── config
+│   └── config.yaml
+├── dvc.lock
+├── dvc.yaml
+├── logs
+│   └── running_logs.log
+├── main.py
+├── model
+│   └── model.h5
+├── params.yaml
+├── requirements.txt
+├── research
+│   ├── 01_data_ingestion.ipynb
+│   ├── 02_prepare_base_model.ipynb
+│   ├── 03_model_trainer.ipynb
+│   ├── 04_model_evaluation_with_mlflow.ipynb
+│   └── trials.ipynb
+├── scores.json
+├── setup.py
+├── src
+│   ├── cnnClassifier
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   └── __init__.cpython-310.pyc
+│   │   ├── components
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   ├── data_ingestion.py
+│   │   │   ├── model_evaluation_mlflow.py
+│   │   │   ├── model_trainer.py
+│   │   │   └── prepare_base_model.py
+│   │   ├── config
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   └── configuration.py
+│   │   ├── constants
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   ├── entity
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   └── config_entity.py
+│   │   ├── pipeline
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   ├── prediction.py
+│   │   │   ├── stage_01_data_ingestion.py
+│   │   │   ├── stage_02_prepare_base_model.py
+│   │   │   ├── stage_03_model_trainer.py
+│   │   │   └── stage_04_model_evaluation.py
+│   │   └── utils
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       └── common.py
+│   └── cnnClassifier.egg-info
+│       ├── PKG-INFO
+│       ├── SOURCES.txt
+│       ├── dependency_links.txt
+│       └── top_level.txt
+├── template.py
+├── templates
+│   └── index.html
+└── tree.txt
+
+29 directories, 50 files
